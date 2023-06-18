@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
-import datosUsuarios from '../app/api/datos.js'
+import datosUsuarios from '../app/routes/datos.route.js'
+import servidor from '../app/routes/servidor.route.js'
 
 
 const app = express();
@@ -11,11 +12,10 @@ app.use(cors());
 
 
 
-app.get("/",(req,res)=>{
-    res.send("Hola aquí funciona bien")
-})
-
+app.use(servidor)
 app.use(datosUsuarios)
+
+
 
 
 app.listen(Port,()=> {
