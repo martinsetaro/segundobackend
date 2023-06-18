@@ -1,7 +1,7 @@
 {
   "routes":[
     { 
-      "src":"/" , "dest":"/routes/servidor"
+      "src":"/routes" , "dest":"/index.js"
     }
   ]
 }
