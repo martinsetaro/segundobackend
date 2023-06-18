@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import datos from './routes/datos.routes.js'
+
 
 
 const app = express();
@@ -13,7 +13,7 @@ app.get("/",(req,res)=>{
     res.send("aqui adelante funciona bien")
 })
 
-app.use(datos)
+
 
 
 
