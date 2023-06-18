@@ -1,12 +1,12 @@
 import { Router } from "express";
 
 
-const route = Router();
+const router = Router();
 
 
 
-route.get("/usuarios", (req,res)=>{
+router.get("/usuarios", (req,res)=>{
     res.json({name:"joe", lastname:"doe"})
 })
 
-export default route;
+export default router;

@@ -1,13 +1,9 @@
-import { Router} from "express";
+import { Router } from "express";
 
-const route = Router();
+const router = Router();
 
+router.get("/", (req, res) => {
+  res.send("Desde el servidor");
+});
 
-route.get("/",(req,res)=>{
-
-    res.send("Desde el servidor")
-})
-
-
-
-export default route;
+export default router;
