@@ -9,7 +9,9 @@ const Port = process.env.Port || 4001;
 app.use(express.json());
 app.use(cors());
 
-
+app.get("/",(req,res)=>{
+    res.send("aqui adelante funciona bien")
+})
 
 app.use(datos)
 
