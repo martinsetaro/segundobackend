@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
-import datosUsuarios from '../app/routes/datos.route';
-import servidor from '../app/routes/servidor.route';
+import datosUsuarios from '../app/routes/datos.js';
+import servidor from '../app/routes/servidor.js';
 
 const app = express();
 const port = process.env.PORT || 4001;
