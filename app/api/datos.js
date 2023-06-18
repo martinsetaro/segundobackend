@@ -1,5 +1,5 @@
 import { Router } from "express";
-import db from '../db.json.js' assert { type : "json"};
+import db from '../db.json' assert { type : "json"};
 
 const route = Router();
 
