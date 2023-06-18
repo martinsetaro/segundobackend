@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use('/servidor', servidor);
-app.use('/datos', datosUsuarios);
+app.use('/usuario', datosUsuarios);
 
 app.listen(port, () => {
   console.log(`El servidor está funcionando en el puerto ${port}`);
